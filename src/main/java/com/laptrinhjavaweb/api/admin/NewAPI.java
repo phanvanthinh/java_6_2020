@@ -11,7 +11,6 @@ public class NewAPI {
 	@Autowired
 	private INewService newService;
 	
-	
 	@PostMapping("/api/new")
 	public NewDTO createNew(@RequestBody NewDTO newDTO) {
 		return newService.save(newDTO);
